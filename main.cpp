@@ -96,7 +96,7 @@ int main(){
 
         while(true){
             cout<<"Enter 1, 2, or 3: ";
-            if(cin>>choice && (choice = 1 || choice = 2 || choice = 3){
+            if(cin>>choice && (choice == 1 || choice == 2 || choice == 3)){
                 break;
             }
             cout<<"Invalid input, try again";
