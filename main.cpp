@@ -93,9 +93,19 @@ int main(){
         cout<<"|    2.) Login                           |"<<endl;
         cout<<"|    3.) Quit Program                    |"<<endl;
         cout<<"------------------------------------------"<<endl;
-        cin>>choice;
-        switch(choice){
 
+        while(true){
+            cout<<"Enter 1, 2, or 3: ";
+            if(cin>>choice && (choice = 1 || choice = 2 || choice = 3){
+                break;
+            }
+            cout<<"Invalid input, try again";
+            cin.clear();
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        }
+
+                
+        switch(choice){
             case 1:
                 cin.ignore();
                 cout<<"\nEnter a Username: ";
